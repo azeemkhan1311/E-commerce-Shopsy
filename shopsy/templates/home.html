@@ -93,9 +93,9 @@ home-page
             <input type="text" name="product_id" value={{pro.id}} hidden />
             <input type="submit" class="btn btn-primary" value="Add to Cart" />
           </form>
-          <button type="button" class="grid gap-2 col-6 mx-auto mt-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+          {% comment %} <button type="button" class="grid gap-2 col-6 mx-auto mt-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
           View Product
-        </button>
+        </button> {% endcomment %}
           {% endif %}
         </div>
       </div>
@@ -118,7 +118,7 @@ home-page
   }
 </script>
 {% endif %}
-<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+{% comment %} <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button> {% endcomment %}
 
 {% comment %} <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
   <div class="offcanvas-header">
