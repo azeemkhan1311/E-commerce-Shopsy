@@ -211,3 +211,10 @@ def order(request):
     }
     request.session['cart'] = {}
     return render(request, 'order.html', context=context)
+
+from rest_framework import routers, serializers, viewsets
+from .serializers import SignupSerializer
+
+class SignupViewSet(viewsets.ModelViewSet):
+    queryset = Signup.objects.all()
+    serializer_class = SignupSerializer
